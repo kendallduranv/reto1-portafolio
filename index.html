@@ -15,8 +15,6 @@
     <!-- <link rel="stylesheet" href="./styles.css"> -->
     <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="styles.css"></noscript>
-
-    <link rel="preload" href="imgs/gato-naranja.webp" as="image">
 </head>
 
 <body>
@@ -138,10 +136,9 @@
     <picture>
         <source srcset="imgs/gato-naranja-small.webp" media="(max-width: 600px)">
         <source srcset="imgs/gato-naranja.webp">
-        <img src="imgs/gato-naranja.webp" alt="Gatito Naranja" width="300" height="200">
+        <img loading="lazy" src="imgs/gato-naranja.webp" alt="Gatito Naranja" width="300" height="200">
     </picture>
-    
-    
+
     <script src="main.js" defer></script>
 </body>
 
