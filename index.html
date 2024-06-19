@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Mascotas - Gatitos</title>
-
+    <link rel="stylesheet" href="index.css">
     <!-- Uso de CDN de FontAwesome (mala práctica para carga lenta) -->
-    <link rel="stylesheet" href="path/to/local/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
     <!-- Mala práctica: Incluir estilos CSS en línea en el archivo HTML -->
 
+
     <!-- Estilos de la página  -->
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
     <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="styles.css"></noscript>
 </head>
@@ -38,7 +40,7 @@
         <section>
             <h2>Nuestros Gatitos</h2>
             <div class="gallery">
-                <img loading="lazy" src="imgs/gato-naranja.webp" alt="Gatito Naranja" width="300" height="200">
+                <img src="imgs/gato-naranja.webp" alt="Gatito Naranja" width="300" height="200">
                 <img loading="lazy" src="imgs/gato-negro.webp" alt="Gatito Negro" width="300" height="200">
                 <img loading="lazy" src="imgs/gato-grisblanco.webp" alt="Gatito Gris y Blanco" width="300" height="200">
                 <img loading="lazy" src="imgs/gato-gris.webp" alt="Gatito Gris" width="300" height="200">
@@ -124,18 +126,18 @@
     <!-- Mala práctica: Cargar múltiples librerías de JavaScript desde CDN -->
 
     <script src="path/to/combined-scripts.min.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" defer></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- Mala práctica: Imágenes sin tamaño especificado -->
     <!-- <img loading="lazy" src="imgs/gato-naranja.webp" alt="Gatito sin tamaño"> -->
 
-    <!-- <picture>
+    <picture>
         <source srcset="imgs/gato-naranja-small.webp" media="(max-width: 600px)">
         <source srcset="imgs/gato-naranja.webp">
         <img loading="lazy" src="imgs/gato-naranja.webp" alt="Gatito Naranja" width="300" height="200">
-    </picture> -->
+    </picture>
 
     <script src="main.js" defer></script>
 </body>
